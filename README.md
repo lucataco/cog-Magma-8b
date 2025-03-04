@@ -76,6 +76,7 @@ We will be releasing all the following contents:
       - [Inference with Huggingface Transformers](#inference-with-huggingface-transformers)
       - [Inference with local code](#inference-with-local-code-from-this-repo)
       - [Evaluation with lmms-eval](#evaluation-with-lmms-eval)
+      - [Multi-images or Video](#multi-images-or-video)
       - [Agent Demos](#agent-demos)
 - [Citation](#citation)
 - [Acknowledgements](#acknowledgements)
@@ -241,6 +242,20 @@ Once everything is ready, you can run the following code to evaluate our model.
 ```bash
 sh scripts/lmms_eval_magma.sh
 ```
+
+### Multi-images or Video
+
+Handle multiple images is extremely simple for our model. You just simply duplicate the placeholder in your text prompt, and correspondingly add all images into the list. A dummy example is as follows:
+
+```py
+convs = [
+    {"role": "system", "content": "You are agent that can see, talk and act."},            
+    {"role": "user", "content": "<image_start><image><image_end>\n<image_start><image><image_end>\n<image_start><image><image_end>\nWhat is the letter on the robot?"},
+]
+prompt = processor.tokenizer.apply_chat_template(convs, tokenize=False, add_generation_prompt=True)
+inputs = processor(images=[image1,image2,image3], texts=prompt, return_tensors="pt")
+```
+Our model will handle the visual token filling for you!
 
 ### Agent Demos
 
