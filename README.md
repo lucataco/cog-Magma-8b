@@ -243,6 +243,11 @@ Once everything is ready, you can run the following code to evaluate our model.
 sh scripts/lmms_eval_magma.sh
 ```
 
+You can evaluate other benchmarks by modifying the variable, eval_tasks. The list of eval_tasks can be found after running below code.
+```
+lmms-eval --tasks list_groups
+```
+
 ### Multi-images or Video
 
 Handle multiple images is extremely simple for our model. You just simply duplicate the placeholder in your text prompt, and correspondingly add all images into the list. A dummy example is as follows:
