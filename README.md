@@ -245,6 +245,7 @@ sh scripts/lmms_eval_magma.sh
 
 You can evaluate other benchmarks by modifying the variable, eval_tasks. The list of `eval_tasks` can be found after running below code.
 ```
+# lmms-eval --tasks {list_groups,list_subtasks,list_tags,list}
 lmms-eval --tasks list_groups
 ```
 
