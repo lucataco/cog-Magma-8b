@@ -51,6 +51,7 @@
 * **Scalable Pretraining Strategy:** Magma is designed to be **learned scalably from unlabeled videos** in the wild in addition to the existing agentic data, making it strong generalization ability and suitable for real-world applications!
 
 ## :fire: News
+* **[2025.03.06]** We released a new demo for showing robot planning capabilities. Run `python agents/robot_traj/app.py` to start the demo!
 * **[2025.02.28]** We released two demos, [Magma-UI](https://huggingface.co/spaces/microsoft/Magma-UI) and [Magma-Gaming](https://huggingface.co/spaces/microsoft/Magma-Gaming) on Hugging Face. Check out our model's action grounding and planning capabilities!
 * **[2025.02.26]** ⭐ Exciting News! Magma got accepted by CVPR 2025!
 * **[2025.02.25]** 🎉 Big News! We are releasing the Magma model on [Hugging Face](https://huggingface.co/microsoft/Magma-8B) and [Azure AI Foundry](https://ai.azure.com/explore/models/microsoft-magma-8b/version/1/registry/HuggingFace?tid=72f988bf-86f1-41af-91ab-2d7cd011db47)!
@@ -287,7 +288,9 @@ We also built a gaming agent demo. You can run the following command to start th
 python agents/gaming_agent/app.py
 ```
 
-Once the demo is run, you can see a robot proactively collecting the green blocks. Below are the comparison between Magma and other counterparts VLMs:
+Once the demo is run, you can see a robot proactively collecting the green blocks. 
+
+<!-- Below are the comparison between Magma and other counterparts VLMs:
 
 <div align="center">
 <video width="48%" controls autoplay>
@@ -298,7 +301,7 @@ Once the demo is run, you can see a robot proactively collecting the green block
     <source src="https://microsoft.github.io/Magma/static/videos/magma_vs_qwen.mp4" type="video/mp4">
     <p>Magma v.s. Qwen-2.0.</p>
 </video>
-</div>
+</div> -->
 
 #### Robot Visual Planning
 
@@ -308,7 +311,7 @@ We also built a robot visual planning demo. You can run the following command to
 python agents/robot_traj/app.py
 ```
 
-Some example outputs:
+<!-- Some example outputs:
 
 <div align="center">
 <video width="48%" controls autoplay>
@@ -319,7 +322,7 @@ Some example outputs:
     <source src="assets/videos/robot_push_chip_bag_to_left_edge_of_table.mp4" type="video/mp4">
     <p>Task: Push chip bag to left edge of the table.</p>
 </video>
-</div>
+</div> -->
 
 ## User Guidance
 
