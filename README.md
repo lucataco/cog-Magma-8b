@@ -279,6 +279,48 @@ But also ask free question on the fly! Simply add a prefix "Q:" at the beginning
 Q: What is the title of the post?
 ```
 
+#### Gaming Agent
+
+We also built a gaming agent demo. You can run the following command to start the demo:
+
+```bash
+python agents/gaming_agent/app.py
+```
+
+Once the demo is run, you can see a robot proactively collecting the green blocks. Below are the comparison between Magma and other counterparts VLMs:
+
+<div align="center">
+<video width="48%" controls autoplay>
+    <source src="https://microsoft.github.io/Magma/static/videos/magma_vs_llava.mp4" type="video/mp4">
+    <p>Magma v.s. LLaVA-OneVision.</p>
+</video>
+<video width="48%" controls autoplay>
+    <source src="https://microsoft.github.io/Magma/static/videos/magma_vs_qwen.mp4" type="video/mp4">
+    <p>Magma v.s. Qwen-2.0.</p>
+</video>
+</div>
+
+#### Robot Visual Planning
+
+We also built a robot visual planning demo. You can run the following command to start the demo:
+
+```bash
+python agents/robot_traj/app.py
+```
+
+Some example outputs:
+
+<div align="center">
+<video width="48%" controls autoplay>
+    <source src="assets/videos/robot_pick_up_chip_bag.mp4" type="video/mp4">
+    <p>Task: Pick up chip bag.</p>
+</video>
+<video width="48%" controls autoplay>
+    <source src="assets/videos/robot_push_chip_bag_to_left_edge_of_table.mp4" type="video/mp4">
+    <p>Task: Push chip bag to left edge of the table.</p>
+</video>
+</div>
+
 ## User Guidance
 
 <!-- This section is for the model use without fine-tuning or plugging into a larger ecosystem/app. -->
