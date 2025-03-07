@@ -1,3 +1,10 @@
+# --------------------------------------------------------
+# Magma - Multimodal AI Agent at Microsoft Research
+# Copyright (c) 2025 Microsoft
+# Licensed under The MIT License [see LICENSE for details]
+# Jianwei Yang (jianwyan@microsoft.com)
+# --------------------------------------------------------
+
 import pygame
 import numpy as np
 import gradio as gr

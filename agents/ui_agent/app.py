@@ -1,3 +1,10 @@
+# --------------------------------------------------------
+# Magma - Multimodal AI Agent at Microsoft Research
+# Copyright (c) 2025 Microsoft
+# Licensed under The MIT License [see LICENSE for details]
+# Jianwei Yang (jianwyan@microsoft.com)
+# --------------------------------------------------------
+
 from typing import Optional
 import spaces
 import gradio as gr
